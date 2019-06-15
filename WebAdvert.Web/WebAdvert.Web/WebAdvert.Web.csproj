@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Accounts\Signup.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Amazon.AspNetCore.Identity.Cognito" Version="1.0.0" />
+    <PackageReference Include="Amazon.Extensions.CognitoAuthentication" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Signin\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Accounts\Signup.cshtml" />
+  </ItemGroup>
+
+</Project>
